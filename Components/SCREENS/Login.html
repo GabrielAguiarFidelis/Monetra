@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=7">
        <meta http-equiv="X-UA-Compatible" content="ie=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
+
        <title>Login | Monetra</title>
 
        <link rel="stylesheet" href="/Components/CSS/login.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
        <div class="container">
               <!-- Login Form -->
-               <div class="form-box login"></div>
+              <div class="form-box login">
+                     <form action="#">
+                            <h1>Login</h1>
+                            <div class="input-box">
+                                   <input type="text" placeholder="Username" required>
+                                   <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="input-box">
+                                   <input type="password" placeholder="Password" required>
+                                   <i class="fa-solid fa-lock"></i>
+                            </div>
+
+                            <button type="submit" class="btn">Login</button>
+                     </form>
+              </div>
 
               <!-- Registration Form -->
-               <div class="form-box register"></div>
+              <div class="form-box register">
+                     <div class="form-box login">
+                            <form action="#">
+                                   <h1>Register</h1>
+                                   <div class="input-box">
+                                          <input type="text" placeholder="Username" required>
+                                          <i class="fa-solid fa-user"></i>
+                                   </div>
+
+                                   <div class="input-box">
+                                          <input type="email" placeholder="Email" required>
+                                          <i class="fa-solid fa-envelope"></i>
+                                   </div>
+
+                                   <div class="input-box">
+                                          <input type="password" placeholder="Password" required>
+                                          <i class="fa-solid fa-lock"></i>
+                                   </div>
+
+                                   <button type="submit" class="btn">Register</button>
+                            </form>
+                     </div>
+              </div>
 
               <!-- Toggle Box -->
-               <div class="toggle-box">
+              <div class="toggle-box">
                      <!-- Toggle Box Left -->
-                     <div class="toggle-panel toggle-left"></div>
+                     <div class="toggle-panel toggle-left">
+                            <h1>Hello, Welcome!</h1>
+                            <p>Don't have an account?</p>
+                            <button class="btn register-btn">Register</button>
+                     </div>
 
                      <!-- Toggle Box Right -->
                      <div class="toggle-panel toggle-right">
@@ -30,10 +73,11 @@
                             <p>Already have an account?</p>
                             <button class="btn login-btn">Login</button>
                      </div>
-               </div>
+              </div>
        </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="/Components/JS/login.js"></script>
+
 </html>
