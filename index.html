@@ -1,20 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=7">
-       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-       <meta name="description" content="Aplicativo de controle financeiro, onde o usuário pode cadastrar suas receitas e despesas, e ter um controle financeiro mais eficiente.">
-       <meta name="keywords" content="controle financeiro, aplicativo de controle financeiro, finanças pessoais, orçamento, despesas, receitas">
-       <meta name="author" content="Gabriel A. Fidelis">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+       <meta name="author" content="Gabriel Fidelis">
+       <meta name="description" content="Aplicativo para controle financeiro pessoal.">
        <title>Monetra</title>
-
        <link rel="stylesheet" href="style.css">
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <link rel="shortcut icon" href="/img/icons8-financeiro-96.png" type="image/x-icon">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-       <a href="/Components/SCREENS/Login.html">Login</a>
+
+       <!-- NAVBAR -->
+       <header>
+              <h1>Monetra</h1>
+
+              <nav>
+                     <a href="#">Funcionalidades</a>
+                     <a href="#">Como funciona</a>
+                     <a href="#demo">Demonstração</a>
+                     <a href="#">Benefícios</a>
+              </nav>
+
+              <a href="#" class="cta">Começar agora</a>
+       </header>
+
+       <!-- HERO -->
+       <section class="hero">
+
+              <div class="hero-content">
+
+                     <span class="tag">PLATAFORMA DE CONTROLE FINANCEIRO</span>
+
+                     <h1>
+                            Sistema inteligente para <span>controle financeiro</span> do seu negócio
+                     </h1>
+
+                     <p>
+                            Registre ganhos, gastos e acompanhe seu lucro em tempo real com uma plataforma simples e
+                            eficiente.
+                     </p>
+
+                     <div class="buttons">
+                            <a href="#demo" class="btn primary">▶ Ver demonstração</a>
+                            <a href="#" class="btn secondary">💬 Falar no WhatsApp</a>
+                     </div>
+
+                     <div class="social-proof">
+                            <div class="avatars">
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                            </div>
+                            <p><strong>+150 usuários</strong> já utilizam o sistema</p>
+                     </div>
+
+              </div>
+
+              <div class="hero-image">
+                     <div class="phone">
+                            <div class="screen">
+                                   <img src="img/Dashboard.jpg" alt="Sistema">
+                            </div>
+                     </div>
+
+                     <div class="floating-card">
+                            <span>Lucro do mês</span>
+                            <strong>R$ 8.450</strong>
+                            <small>+18% este mês</small>
+                     </div>
+              </div>
+
+       </section>
+
+       <!-- PROBLEMA -->
+       <section class="problema">
+              <h2>Você passa por isso?</h2>
+              <ul>
+                     <li>❌ Não sabe quanto lucrou no mês</li>
+                     <li>❌ Perde controle dos gastos</li>
+                     <li>❌ Usa planilhas complicadas</li>
+              </ul>
+       </section>
+
+       <!-- SOLUÇÃO -->
+       <section class="solucao">
+              <h2>A solução simples</h2>
+              <div class="cards">
+                     <div class="card">✔ Controle de gastos</div>
+                     <div class="card">✔ Registro de ganhos</div>
+                     <div class="card">✔ Lucro automático</div>
+              </div>
+       </section>
+
+       <!-- DEMO -->
+       <section class="demo" id="demo">
+              <span class="tag">DEMONSTRAÇÃO</span>
+              <h2>Veja o sistema em ação</h2>
+              <p>
+                     Explore as principais telas do sistema e descubra como ele pode transformar seu negócio.
+              </p>
+
+              <div class="tabs">
+                     <button class="tab active" onclick="trocarTela(event,'dashboard')">Dashboard</button>
+                     <button class="tab" onclick="trocarTela(event,'ganhos')">Ganhos</button>
+                     <button class="tab" onclick="trocarTela(event,'gastos')">Gastos</button>
+              </div>
+
+              <div class="phone">
+                     <div class="screen">
+                            <img id="tela" src="img/Dashboard.jpg" alt="Sistema">
+                     </div>
+              </div>
+       </section>
+
+       <!-- BENEFÍCIOS -->
+       <section class="beneficios">
+              <span class="tag">BENEFÍCIOS</span>
+              <h2>Transforme o controle financeiro do seu negócio</h2>
+              <p>Tenha clareza, organização e controle total das suas finanças no dia a dia.</p>
+
+              <div class="beneficios-grid">
+
+                     <div class="card">
+                            <div class="icon green">💰</div>
+                            <h3>Controle total do dinheiro</h3>
+                            <p>Saiba exatamente quanto entra e quanto sai, sem perder nada.</p>
+                     </div>
+
+                     <div class="card">
+                            <div class="icon blue">📊</div>
+                            <h3>Visão clara do lucro</h3>
+                            <p>Veja automaticamente quanto você está lucrando no mês.</p>
+                     </div>
+
+                     <div class="card">
+                            <div class="icon purple">📉</div>
+                            <h3>Redução de gastos</h3>
+                            <p>Identifique despesas desnecessárias e economize mais.</p>
+                     </div>
+
+                     <div class="card">
+                            <div class="icon red">📱</div>
+                            <h3>Acesso em qualquer lugar</h3>
+                            <p>Use no celular ou computador, a qualquer momento.</p>
+                     </div>
+
+                     <div class="card">
+                            <div class="icon orange">⚡</div>
+                            <h3>Simples e rápido de usar</h3>
+                            <p>Interface intuitiva, sem complicação ou necessidade de treinamento.</p>
+                     </div>
+
+              </div>
+       </section>
+
+       <!-- COMO FUNCIONA -->
+       <section class="como">
+              <h2>Como funciona</h2>
+              <ol>
+                     <li>Cadastre ganhos e gastos</li>
+                     <li>O sistema organiza tudo</li>
+                     <li>Veja seu lucro na hora</li>
+              </ol>
+       </section>
+
+       <!-- CTA -->
+       <section class="cta">
+              <h2>Comece agora</h2>
+              <a href="https://finance-app-vert-kappa.vercel.app/" target="_blank" class="btn">Acessar Sistema</a>
+       </section>
+
+       <!-- FOOTER -->
+       <footer>
+              <p>© 2026 FinanceApp</p>
+       </footer>
+
+       <script src="script.js"></script>
 </body>
+
 </html>
