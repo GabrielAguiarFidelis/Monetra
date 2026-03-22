@@ -10,9 +10,7 @@
        <title>Monetra</title>
        <link rel="stylesheet" href="style.css">
        <link rel="shortcut icon" href="/img/icons8-financeiro-96.png" type="image/x-icon">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/icons/remixicon.css">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
-       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -225,6 +223,85 @@
               </div>
        </section>
 
+       <section class="planos section-reveal">
+
+              <span class="tag">PLANOS</span>
+
+              <h2>Escolha o plano ideal para o seu negócio</h2>
+
+              <p class="subtitle">
+                     Comece simples e evolua conforme sua empresa cresce.
+              </p>
+
+              <div class="planos-grid">
+
+                     <!-- BÁSICO -->
+                     <div class="plano">
+                            <h3>Básico</h3>
+                            <p class="preco">R$ 19<span>/mês</span></p>
+
+                            <ul>
+                                   <li>✔ Registro de ganhos</li>
+                                   <li>✔ Controle de gastos</li>
+                                   <li>✔ Relatório simples</li>
+                                   <li>❌ Gráficos avançados</li>
+                                   <li>❌ Suporte prioritário</li>
+                            </ul>
+
+                            <a href="#" class="btn primary escolher" data-plano="basico">Começar</a>
+                     </div>
+
+                     <!-- PRO (DESTAQUE) -->
+                     <div class="plano destaque">
+                            <span class="badge">Mais escolhido</span>
+
+                            <h3>Pro</h3>
+                            <p class="preco">R$ 39<span>/mês</span></p>
+
+                            <ul>
+                                   <li>✔ Tudo do Básico</li>
+                                   <li>✔ Gráficos e análises</li>
+                                   <li>✔ Relatórios completos</li>
+                                   <li>✔ Histórico mensal</li>
+                                   <li>✔ Suporte rápido</li>
+                            </ul>
+
+                            <a href="#" class="btn primary escolher" data-plano="pro">Começar agora</a>
+                     </div>
+
+                     <!-- PREMIUM -->
+                     <div class="plano">
+                            <h3>Premium</h3>
+                            <p class="preco">R$ 79<span>/mês</span></p>
+
+                            <ul>
+                                   <li>✔ Tudo do Pro</li>
+                                   <li>✔ Multi-empresas</li>
+                                   <li>✔ Backup automático</li>
+                                   <li>✔ Suporte prioritário</li>
+                                   <li>✔ Novidades antecipadas</li>
+                            </ul>
+
+                            <a href="#" class="btn primary escolher" data-plano="premium">Começar</a>
+                     </div>
+
+              </div>
+
+       </section>
+
+       <div class="modal" id="modalPlano">
+
+              <div class="modal-content">
+                     <span class="close">&times;</span>
+
+                     <h2>Plano selecionado 🚀</h2>
+                     <p id="planoEscolhidoTexto"></p>
+
+                     <button id="confirmarPlano">Continuar</button>
+              </div>
+
+       </div>
+
        <!-- CTA -->
        <section class="cta-final">
 
@@ -266,7 +343,7 @@
 
        </footer>
 
-       <script src="script.js"></script>
+       <script src="/script.js"></script>
 </body>
 
 </html>
